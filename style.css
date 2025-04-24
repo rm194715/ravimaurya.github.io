@@ -19,7 +19,6 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 .container{
     padding: 10px 10%;  
 }
@@ -344,62 +343,108 @@ form .btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width:600px){
-    #header{
+
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(Images/Phone_Pic.png);
     }
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+
+    .header-text {
+        margin-top: 60%;
+        font-size: 18px;
+        padding: 0 10px;
     }
-    .header-text h1{
-        font-size: 30px;
+
+    .header-text h1 {
+        font-size: 28px;
     }
-    nav .fas{
+
+    nav .fas {
         display: block;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
     }
-    nav ul{
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.5s ease-in-out;
+        flex-direction: column;
     }
-    nav ul li{
-        display: block;
-        margin: 25px;
 
+    nav ul li {
+        display: block;
+        margin: 20px 0;
     }
-    nav ul .fas{
+
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
-        cursor: pointer;
+        font-size: 25px;
     }
-    .sub-title{
-        font-size: 40px;
+
+    nav ul.open {
+        right: 0;
     }
-    .about-col1, .about-col2{
+
+    .sub-title,
+    .subtitle {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .about-col1,
+    .about-col2 {
         flex-basis: 100%;
     }
-    .about-col1{
-        margin-bottom: 30px;
+
+    .about-col1 {
+        margin-bottom: 20px;
     }
-    .about-col2{
-        font-size: 40px;
-    }
-    .tab-links{
+
+    .about-col2 {
         font-size: 16px;
-        margin-right: 20px
     }
-    .contact-left, .contact-right{
-        flex-flow: 100%;
+
+    .tabtitle {
+        flex-direction: column;
+        align-items: center;
     }
-    .copyright{
+
+    .tab-links {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .services-list,
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    .btn.btn2 {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+    .copyright {
         font-size: 14px;
     }
 }
@@ -409,3 +454,4 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
