@@ -21,7 +21,7 @@ body{
 }
 
 .container{
-    padding: 10px 10%;    
+    padding: 10px 10%;  
 }
 
 nav{
@@ -34,7 +34,9 @@ nav{
 .logo{
     width: 350px;
 }
-
+nav ul{
+    margin-left: 37rem;
+}
 nav ul li{
     list-style: none;
     display: inline-block;
