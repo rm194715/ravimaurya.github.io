@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a6e9f8d970.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Ravi_Maurya.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class = "header-text">
+                <p>Data Analyst and Front-End Developer</p>
+                <h1>Hii, I'm <span>Ravi Maurya</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>
+                        Passionate Data Analyst and Front-End Developer with a strong drive for continuous learning and knowledge sharing. Skilled in data analysis and front-end technologies, with a proactive mindset and eagerness to take on new challenges. Committed to personal growth and contributing to the tech community through public learning and collaboration.
+                    </p>
+                    <div class="tabtitle">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Achievments</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>C/C++</li>
+                            <li>Java</li>
+                            <li>Microsoft Excel</li>
+                            <li>Tableau</li>
+                            <li>R Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "projects">
+                        <ul>
+                            <li>Completed Internship in NGO as Team-Leader<br><span>Srishti Seva Sansthan</span></li>
+                            <li>Solved 300+ Problems<br><span>On Leetcode</span></li>
+                            <li>Solved 200+ Problems<br><span>On Geeks for Geeks</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li>B-tech in CSE(Loevely Professional Universit)<br><span>2022-Current</span></li>
+                            <li>Intremediate with 84% (UP Board)<br><span>2021</span></li>
+                            <li>HighSchool with 84% (UP Board)<br><span>2019</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------------Projects-------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Prime1.jpeg">
+                    <img src="Images/Prime2.jpeg">
+                    <div class="layer">
+                        <h3>Amazon-Prime Dashboard Analysis</h3>
+                        <p>This Dashboard Analysis project involves processing and visualizing insights from 10,000+ 
+                            entries of Amazon Prime content data. It includes metrics like genre distribution, content ratings,
+                            release year trends, and duration analysis to understand viewer preferences and platform trends.</p>
+                        <a href="https://github.com/rm194715/Amazon-Prime-Dashboard-Analysis">Click Here</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/chess.jpg">
+                    <div class="layer">
+                        <h3>N Queens Visualizer</h3>
+                        <p>The NQueens Visualizer project in Java graphically demonstrates the solution
+                             to the N-Queens problem using backtracking. It visually places queens on an 
+                             N×N chessboard such that no two queens threaten each other.</p>
+                        <a href="https://github.com/rm194715/n-Queen-Problem">Click Here</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Flood.jpg">
+                    <div class="layer">
+                        <h3>Garments Shopping Web-Page</h3>
+                        <p>The Online Garments Shopping Web Pages project is a user-friendly website 
+                            developed using HTML, CSS, and JavaScript for browsing and purchasing clothing 
+                            items.It includes product listings, filters by category, a shopping cart, and a checkout 
+                            system for a smooth shopping experience.</p>
+                        <a href="https://foratrip.weebly.com/">Click Here</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="https://github.com/rm194715" class="btn">See More</a>
+        </div>
+     </div>
+
+     <!-- ----------------------Nothing--------- -->
+     <div id = "services">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Data Structure & Algorithms</h2>
+                    <p>by Udemy and Geeks for Geeks</p>
+                    <a href="https://www.udemy.com/certificate/UC-2e844b05-a22c-4159-9e93-325b7d760ffa/">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>Introduction to Machine Learning</h2>
+                    <p> by NPTEL</p>
+                    <a href="https://github.com/rm194715/Amazon-Prime-Dashboard-Analysis">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>Mern Stack</h2>
+                    <p>By Cipher School</p>
+                    <a href="https://cipher-other-assets.s3.ap-south-1.amazonaws.com/certificates/TC_rm194715%40gmail.com_CS2024-11207">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>Data Visualization in Excel</h2>
+                    <p>By Coursera</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/QNZRU49VY8K6">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>Data Visualization in Tableau</h2>
+                    <p>By Coursera</p>
+                    <a href="#">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>HTML,CSS and JavaScript</h2>
+                    <p>By Linkedin</p>
+                    <a href="https://www.linkedin.com/learning/me/my-library/completed">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>R Programming</h2>
+                    <p>By Coursera</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/UN39F44NP3KM">Download Certificate</a>
+                </div>
+                <div>
+                    <h2>Intremediate Level Problem Solving</h2>
+                    <p>By Hackerrank</p>
+                    <a href="https://www.hackerrank.com/profile/rm194715">Download Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- ------------Contact-------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> rm194715@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 8957914128</p>
+                    <!-- ----------------------Nothing--------- -->
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ravi-maurya-588983252/" target="_blank" title="LinkedIn">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/ravimaurya194745/" target="_blank" title="LeetCode">
+                          <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/rm194715" target="_blank" title="HackerRank">
+                          <i class="fab fa-hackerrank"></i>
+                        </a>
+                        <a href="https://github.com/rm194715" target="_blank" title="GitHub">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                      
+                      <style>
+                        .social-icons a {
+                          margin: 0 5px;
+                          text-decoration: none;
+                          font-size: 35px;
+                          color: #333;
+                          transition: color 0.3s ease;
+                        }
+                      
+                        .social-icons a:hover {
+                          color: #0077b5;
+                        }
+                      </style>
+
+                    <a href="Images/Ravi Maurya Resume.pdf" download class="btn btn2">Download CV</a>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=-VJxqCRjE3w&ab_channel=RaviMaurya" download class="btn btn2">Video CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyrights &copy;Made by Ravi Maurya &hearts;</p>
+        </div>
+      </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200";
+        }
+    </script>
+
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxHvVEu3f8-q3H4oLQZ0YS5_suJiF-ZKBieLf1Jx0GZwf7pg6Qi4IVlJxXi8BHiq-o2ig/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
